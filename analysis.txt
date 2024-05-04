@@ -1,0 +1,8 @@
+After retrieving data from the given API once every minute for 60 minutes, I was able to gather
+data about the columns factor, pi, and time. Although the time wasn't perfectly every minute, I
+was able to get it very close to gathering data every minute. After I inputted my findings into a
+database, I queried it based on the pi value in increasing order to see the correlation. My findings
+showed that when there as even factors increased, the pi column got closer to the true value of pi from
+the less than the true value of pi side. Accordingly, as the odd factors increased, the pi column got closer to the true
+value of pi but from the greater than side of the true value of pi. Additionally after querying
+through all of the data, I found that as the time increased and went on, the factors increased with it.
