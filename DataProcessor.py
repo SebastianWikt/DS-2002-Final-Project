@@ -20,39 +20,38 @@ connection = sqlite3.connect("database.db")
 cursor = connection.cursor()
 
 #creating the table
-# cursor.execute('''CREATE TABLE IF NOT EXISTS Data (
-#                 entryid INTEGER PRIMARY KEY AUTOINCREMENT,
-#                 factor INTEGER NOT NULL,
-#                 pi DOUBLE NOT NULL,
-#                 time TEXT NOT NULL
-#                )''')
+cursor.execute('''CREATE TABLE IF NOT EXISTS Data (
+                entryid INTEGER PRIMARY KEY AUTOINCREMENT,
+                factor INTEGER NOT NULL,
+                pi DOUBLE NOT NULL,
+                time TEXT NOT NULL
+               )''')
 
-# api_link = "https://4feaquhyai.execute-api.us-east-1.amazonaws.com/api/pi"
+api_link = "https://4feaquhyai.execute-api.us-east-1.amazonaws.com/api/pi"
 
 
-
-# num_minutes = 60
-# for i in range(num_minutes):
-#     response_json = get_response(api_link)
-#     print(response_json)
-#     factor_insert = response_json["factor"]
-#     pi_insert = float(response_json["pi"])
-#     time_insert = response_json["time"]
-#     print(factor_insert)
-#     print(pi_insert)
-#     print(time_insert)
-#     try:
-#         cursor.execute('''INSERT INTO Data (
-#                         factor, 
-#                         pi,
-#                     time)
-#                         VALUES(?, ?, ?)''', 
-#                         (factor_insert, pi_insert, time_insert))
-#         connection.commit()
-#         print("successful")
-#     except Exception as e:
-#         print(f"Error inserting data: {e}")
-#     time.sleep(59.4)
+num_minutes = 60
+for i in range(num_minutes):
+    response_json = get_response(api_link)
+    print(response_json)
+    factor_insert = response_json["factor"]
+    pi_insert = float(response_json["pi"])
+    time_insert = response_json["time"]
+    print(factor_insert)
+    print(pi_insert)
+    print(time_insert)
+    try:
+        cursor.execute('''INSERT INTO Data (
+                        factor, 
+                        pi,
+                    time)
+                        VALUES(?, ?, ?)''', 
+                        (factor_insert, pi_insert, time_insert))
+        connection.commit()
+        print("successful")
+    except Exception as e:
+        print(f"Error inserting data: {e}")
+    time.sleep(59.4)
 
 sql_statement = cursor.execute('''SELECT factor, pi, time
                                 FROM Data
@@ -64,4 +63,5 @@ sql_statement = cursor.execute('''SELECT *
                                 FROM Data''')
 printsql()
 
+connection.commit()
 connection.close()
