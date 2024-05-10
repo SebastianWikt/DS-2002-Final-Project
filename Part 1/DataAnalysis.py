@@ -49,8 +49,8 @@ fig = plt.figure()
 ax = plt.axes()
 
 ax.plot(time2, pi)
-ax.set_title('Time vs Pi')   # Add a title
-ax.set_xlabel('Time')          # Add x label
+ax.set_title('Time vs Pi')
+ax.set_xlabel('Time')
 ax.set_ylabel('Pi')
 
 timePi = "SELECT pi, factor FROM Data ORDER BY factor ASC"
@@ -62,8 +62,8 @@ fig = plt.figure()
 ax = plt.axes()
 
 ax.plot(factor2, pi2)
-ax.set_title('Factor vs Pi')   # Add a title
-ax.set_xlabel('Factor')          # Add x label
+ax.set_title('Factor vs Pi')
+ax.set_xlabel('Factor')
 ax.set_ylabel('Pi')
 
 plt.show()
