@@ -66,7 +66,6 @@ ax.set_title('Factor vs Pi')   # Add a title
 ax.set_xlabel('Factor')          # Add x label
 ax.set_ylabel('Pi')
 
-
 plt.show()
 
 connection.close()

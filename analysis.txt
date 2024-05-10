@@ -11,3 +11,6 @@ got closer to the true value of pi from the less than the true value of pi side.
 odd factors increased, the pi column got closer to the true value of pi but from the greater than side
  of the true value of pi. Additionally after querying through all of the data, I found that as the time
  increased and went on, the factors increased with it.
+
+ This data was found by graphing 3 line graphs using the matplot library. I graphed the time versus
+the factor and time versus pi both ordered by the time and the factor versus pi ordered by the factor.
