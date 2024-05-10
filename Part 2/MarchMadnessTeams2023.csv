@@ -1,0 +1,69 @@
+﻿TeamID,TeamName,SeedID,Round
+1,Houston,1,16
+2,Alabama,1,16
+3,Kansas,1,32
+4,Purdue,1,64
+5,Texas,2,8
+6,Arizona,2,64
+7,UCLA,2,16
+8,Marquette,2,32
+9,Gonzaga,3,8
+10,Baylor,3,32
+11,Kansas St.,3,8
+12,Xavier,3,16
+13,Connecticut,4,1
+14,Tennessee,4,16
+15,Indiana,4,32
+16,Virginia,4,64
+17,Duke,5,32
+18,San Diego St.,5,2
+19,Saint Mary's,5,32
+20,Miami FL,5,4
+21,Creighton,6,8
+22,Kentucky,6,32
+23,TCU,6,32
+24,Iowa St.,6,64
+25,Texas A&M,7,64
+26,Michigan St.,7,16
+27,Northwestern,7,32
+28,Missouri,7,32
+29,Arkansas,8,16
+30,Memphis,8,64
+31,Maryland,8,32
+32,Iowa,8,64
+33,Auburn,9,32
+34,Illinois,9,64
+35,West Virginia,9,64
+36,Florida Atlantic,9,4
+37,Utah St.,10,64
+38,USC,10,64
+39,Penn St.,10,32
+40,Boise St.,10,64
+41,Providence,11,64
+42,Mississippi St.,11,68
+43,North Carolina St.,11,64
+44,Arizona St.,11,64
+45,Pittsburgh,11,32
+46,Nevada,11,68
+47,VCU,12,64
+48,Drake,12,64
+49,College of Charleston,12,64
+50,Oral Roberts,12,64
+51,Iona,13,64
+52,Kent St.,13,64
+53,Furman,13,32
+54,Louisiana Lafayette,13,64
+55,Grand Canyon,14,64
+56,UC Santa Barbara,14,64
+57,Montana St.,14,64
+58,Kennesaw St.,14,64
+59,Vermont,15,64
+60,Colgate,15,64
+61,Princeton,15,16
+62,UNC Asheville,15,64
+63,Northern Kentucky,16,64
+64,Texas A&M Corpus Chris,16,64
+65,Howard,16,64
+66,Southeast Missouri St.,16,68
+67,Texas Southern,16,68
+68,Fairleigh Dickinson,16,32
