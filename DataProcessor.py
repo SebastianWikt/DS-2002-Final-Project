@@ -4,16 +4,13 @@ import pandas as pd
 import time
 from datetime import datetime
 
+import numpy as np
+
 #function for converting api call to csv and useable data
 def get_response(url):
     response = requests.get(url)
     response_json = response.json()
     return response_json
-
-def printsql():
-    rows_in_sql = cursor.fetchall()
-    for row in rows_in_sql:
-        print(row)
 
 #connecting to database (database.db through sqlite import)
 connection = sqlite3.connect("database.db")
@@ -53,15 +50,6 @@ for i in range(num_minutes):
         print(f"Error inserting data: {e}")
     time.sleep(59.4)
 
-sql_statement = cursor.execute('''SELECT factor, pi, time
-                                FROM Data
-                                ORDER BY pi ASC''')
-printsql()
-
-
-sql_statement = cursor.execute('''SELECT *
-                                FROM Data''')
-printsql()
 
 connection.commit()
 connection.close()
